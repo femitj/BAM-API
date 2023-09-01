@@ -48,5 +48,9 @@ export const schema = [
 ];
 
 export const resolveAccSchema = [
-  param('accountNumber').exists().withMessage('Account Number is required'),
+  param('accountNumber')
+    .exists()
+    .withMessage('Account Number is required')
+    .isLength({ min: 10, max: 10 })
+    .withMessage('Account number is invalid, 10 digit required'),
 ];

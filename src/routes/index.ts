@@ -4,7 +4,7 @@ import { serve, setup } from 'swagger-ui-express';
 import swaggerDefinition from '../docs/api-specification';
 import AccountController from '../controllers/AccountController';
 import validator from '../middlewares/validator';
-import { resolveAccSchema, schema } from '@/validations/bankSchema';
+import { resolveAccSchema, schema } from '../validations/bankSchema';
 
 const specs = swaggerJsdoc(swaggerDefinition);
 const router = Router();

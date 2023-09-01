@@ -1,8 +1,6 @@
 import { resolve } from 'path';
 import envConfig from '../config/envConfig';
 
-console.log(envConfig.env);
-
 const options = {
   swaggerDefinition: {
     openapi: '3.0.0',

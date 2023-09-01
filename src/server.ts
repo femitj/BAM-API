@@ -7,7 +7,6 @@ import router from './routes';
 
 dotenv.config();
 const app = express();
-const server = http.createServer(app);
 
 app.use(logger('dev'));
 
@@ -20,11 +19,16 @@ app.use(
 app.use(cors());
 
 app.get('/', (req, res) => {
-  return res.send('Welcome to BAM API');
+  res.status(200).json({
+    status: 200,
+    message: 'Welcome to BAM API',
+  });
 });
 
 app.use(router);
 
 const port = process.env.PORT || 8080;
 
-server.listen(port, () => console.log(`App is listening to port: ${port}`));
+app.listen(port, () => console.log(`App is listening to port: ${port}`));
+
+export default app;
