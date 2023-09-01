@@ -5,7 +5,7 @@ const options = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'BAM',
+      title: 'Basic Account Management',
       version: '1.0.0',
       description: 'Server-side Application for BAM',
       license: {
@@ -24,12 +24,8 @@ const options = {
     ],
     servers: [
       {
-        url: '',
+        url: 'https://bam-api-p7g0.onrender.com/api/v1',
         description: 'Production Server',
-      },
-      {
-        url: 'https://bam.herokuapp.com/api/v1',
-        description: 'Staging Server',
       },
       {
         url: `http://localhost:${envConfig.PORT}/api/v1`,

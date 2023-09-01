@@ -22,6 +22,7 @@ The Basic Bank Account Management API is a simple RESTful API built with Node.js
 Before you can run the Bank Account Management API, make sure you have the following software installed:
 
 - Node.js: [Download and Install Node.js](https://nodejs.org/)
+- npm or Yarn
 
 ### Installation
 
@@ -48,6 +49,10 @@ Before you can run the Bank Account Management API, make sure you have the follo
    ```
    yarn dev
    ```
+
+🎉 Mission Completes.
+
+The backend will be accessible at http://localhost:8080.
 
 ## Usage
 
@@ -79,11 +84,20 @@ Before you can run the Bank Account Management API, make sure you have the follo
 - **Response**:
   - An array containing all account details, including account numbers, holder names, DOBs, account types, and balances.
 
+## Production url
+
+Visit on onrender [https://bam-api-p7g0.onrender.com/](https://bam-api-p7g0.onrender.com/)
+
+## Documentation
+
+Visit Production [Swagger](https://bam-api-p7g0.onrender.com/api/docs)
+
+On [localhost Swagger](http://localhost:8080/api/docs)
+
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or pull requests for any improvements, bug fixes, or new features.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-EOF
+This project is licensed under the [MIT License](LICENSE).
