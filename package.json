@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "cross-env NODE_ENV=production nodemon",
+    "dev": "cross-env nodemon",
     "start": "node dist/server.js",
     "build:tsc": "tsc && tsc-alias",
     "postinstall": "npm run build:tsc"

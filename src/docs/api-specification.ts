@@ -1,6 +1,8 @@
 import { resolve } from 'path';
 import envConfig from '../config/envConfig';
 
+console.log(envConfig.env);
+
 const options = {
   swaggerDefinition: {
     openapi: '3.0.0',
@@ -35,7 +37,10 @@ const options = {
   },
   apis: [
     resolve(__dirname, '../docs/resources/*.yaml'),
-    resolve(__dirname, '../routes/*.ts'),
+    resolve(
+      __dirname,
+      envConfig.env === 'development' ? '../routes/*.ts' : '../routes/*.js'
+    ),
   ],
 };
 
