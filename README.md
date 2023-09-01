@@ -8,10 +8,13 @@ The Basic Bank Account Management API is a simple RESTful API built with Node.js
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Server](#running-the-server)
+  - [Running test](#running-test)
 - [Usage](#usage)
   - [Endpoint 1: Create a Bank Account](#endpoint-1-create-a-bank-account)
   - [Endpoint 2: Resolve a Bank Account](#endpoint-2-resolve-a-bank-account)
   - [Endpoint 3: Fetch All Bank Accounts](#endpoint-3-fetch-all-bank-accounts)
+- [Production url](#production-url)
+- [Documentation](#documentation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -53,6 +56,12 @@ Before you can run the Bank Account Management API, make sure you have the follo
 🎉 Mission Completes.
 
 The backend will be accessible at http://localhost:8080.
+
+### Running Test
+
+```
+   yarn test
+```
 
 ## Usage
 
